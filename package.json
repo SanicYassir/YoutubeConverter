@@ -14,6 +14,8 @@
     "jade": "~1.11.0",
     "livereload": "^0.9.3",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "youtube-search-without-api-key": "^1.0.7",
+    "ytdl-core": "^4.11.0"
   }
 }

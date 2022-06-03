@@ -1,8 +1,27 @@
 extends layout
 
 block content
-  header 
-    .container 
-      h1= title
-        
-  
+
+    form(action="/",method="post")   
+      .container 
+        .row 
+          .col.s12
+              h3.center-align=title
+          .col.s12.valign-wrapper.row 
+            .input-field.col.s12
+              input(id="search",type="text",name="search")
+              label(for="last_name") Type link or the name of the video
+          .col.s12 
+            button(type="submit",class="btn waves-effect waves-light col s12") Search
+
+    div.divider(style={margin:"2rem"})
+    .container
+      if videos 
+        div.row
+          each item in videos 
+            a(href=`/info/${item.id.videoId}`) 
+              .card.col.s12.m6.l3(style={height:"300px"})
+                div(class="card-image waves-effect waves-block waves-light")
+                  img(src=`${item.snippet.thumbnails.url}`, alt="", srcset="")
+                div(class="card-content",style={overflow:'hidden !important'})
+                  p(class=" activator grey-text text-darken-4 text-truncate",style={fontSize:'2rem !important'})=item.title

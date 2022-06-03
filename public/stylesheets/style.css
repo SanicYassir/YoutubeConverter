@@ -1,8 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  font-family: 'Poppins';
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
 }
 
 a {
   color: #00B7FF;
 }
+.text-truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0 !important;
+}
+
+.hide{
+ display: none;
+}
+

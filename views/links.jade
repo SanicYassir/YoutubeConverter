@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .container 
+         ul(class="collection")
+            if links    
+                each item in links 
+                    li(class="collection-item avatar")
+                        i(class="material-icons circle red")  attach_file
+                        span(class="title")=item.title
+                        a(href=`${item.path}`,class="secondary-content")
+                            i(class="material-icons")  file_download
+                  

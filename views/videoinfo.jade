@@ -1,0 +1,15 @@
+extends layout
+
+block content
+   form(action="/download", method="post",id="form") 
+        div.row(class="center",style={width:"100%"})
+            div.col.s12.m6(class="center")
+                    img(src=`${video.snippet.thumbnails.url}`, alt="", srcset="",style={width:"80%"})
+                    h5(style={'line-height':'1.6 !important'})=video.title
+                    input(type="text", name="videoId" value=`${video.id.videoId}`,style={display:"none"})
+                    button(id="submit",type="submit",class="btn waves-effect waves-light col s12") Download
+                    .progress.hide
+                        .indeterminate
+    script(src="/javascripts/script.js")
+
+            
