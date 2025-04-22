@@ -6,6 +6,7 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@distube/ytdl-core": "^4.16.8",
     "connect-livereload": "^0.6.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -16,6 +17,6 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.16",
     "youtube-search-without-api-key": "^1.0.7",
-    "ytdl-core": "^4.11.0"
+    "ytdl-core": "^4.11.5"
   }
 }

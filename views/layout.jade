@@ -6,10 +6,16 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons",rel="stylesheet")
     link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css") 
+    
 
   body
+    canvas(id="smokeCanvas")
     block content
   
 
   script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js") 
+  <!-- Three.js CDN -->
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js") 
+  script(src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js") 
+  script(src="/javascripts/samurai-animation.js") 
  
