@@ -30,7 +30,7 @@ cd youtube-mp3-converter
 npm install
 
 # 3. Start the server
-node app.js
+npm start
 
 ## 🔥 Usage Guide
 1-Visit http://localhost:3000 in your browser 🌐
